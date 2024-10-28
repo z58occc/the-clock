@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.back {
+  background: #293B29 0% 0% no-repeat padding-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hand {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  transform-origin: right;
+  /* 以右邊為軸心旋轉 */
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clock {
+  margin: 225px 465px;
+  width: 350px;
+  height: 350px;
+  background: transparent url('img/clock-bg.svg') 50% 50% no-repeat padding-box;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sec-hand {
+  height: 12px;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+  transform: translateY(-4px);
+  /*修正一開始的偏差*/
+  width: 126px;
+  left: 49px;
+  background: transparent url('./img/second-hand/second-hand.png') 0% 0% no-repeat padding-box;
+ 
+  
+  opacity: 1;
 }
+.min-hand {
+  background-color: black;
+  width: 96px;
+  left: 83px;
+  height: 8px;
+  transform: translateY(-4px);
+  background: transparent url('./img/minute-hand/minute-hand.png') 0% 0% no-repeat padding-box;
+  /* background-size: cover; */
 
-.App-link {
-  color: #61dafb;
+
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hour-hand {
+  background-color: rgb(4, 8, 134);
+  width: 72px;
+  left: 107px;
+  height: 8px;
+  transform: translateY(-4px);  
+  background: transparent url('./img/hour-hand/hour-hand.png') 0% 0% no-repeat padding-box;
 }
