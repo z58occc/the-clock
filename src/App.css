@@ -15,8 +15,11 @@
   margin: 225px 465px;
   width: 350px;
   height: 350px;
-  background: transparent url('img/clock-bg.svg') 50% 50% no-repeat padding-box;
+  /* background: transparent url('img/clock-bg.svg') 50% 50% no-repeat padding-box; */
   position: relative;
+  /* border: black solid; */
+  border-radius: 25%;
+  background-color: #3d5a45;
 }
 
 .sec-hand {
@@ -27,26 +30,54 @@
   width: 126px;
   left: 49px;
   background: transparent url('./img/second-hand/second-hand.png') 0% 0% no-repeat padding-box;
- 
-  
+  align-items: center;
+
   opacity: 1;
 }
+
 .min-hand {
-  background-color: black;
+  background-color: #ff7700;
   width: 96px;
   left: 83px;
   height: 8px;
   transform: translateY(-4px);
-  background: transparent url('./img/minute-hand/minute-hand.png') 0% 0% no-repeat padding-box;
+  border-radius: 30px;
+  /* background: transparent url('./img/minute-hand/minute-hand.png') 0% 0% no-repeat padding-box; */
   /* background-size: cover; */
+  align-items: center;
+  /* transform: matrix(-1, 0, 0, -1, 0, 0); */
+
+
 
 
 }
+
 .hour-hand {
-  background-color: rgb(4, 8, 134);
+  background-color: white;
   width: 72px;
   left: 107px;
   height: 8px;
-  transform: translateY(-4px);  
-  background: transparent url('./img/hour-hand/hour-hand.png') 0% 0% no-repeat padding-box;
+  transform: translateY(-4px);
+  border-radius: 30px;
+  align-items: center;
+
+
+  /* background: transparent url('./img/hour-hand/hour-hand.png') 0% 0% no-repeat padding-box; */
+}
+
+.clock-face {
+  width: 325px;
+  height: 325px;
+  background-color: #293B29;
+  border-radius: 50%;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.clock-number{
+  position: absolute; 
+
 }
