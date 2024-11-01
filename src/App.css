@@ -1,83 +1,77 @@
 .back {
   background: #293B29 0% 0% no-repeat padding-box;
 }
-
 .hand {
   position: absolute;
-  top: 50%;
-  width: 50%;
   transform-origin: right;
   /* 以右邊為軸心旋轉 */
-
 }
 
 .clock {
   margin: 225px 465px;
-  width: 350px;
-  height: 350px;
-  /* background: transparent url('img/clock-bg.svg') 50% 50% no-repeat padding-box; */
   position: relative;
-  /* border: black solid; */
   border-radius: 25%;
   background-color: #3d5a45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sec-hand {
   height: 12px;
-  transform: matrix(-1, 0, 0, -1, 0, 0);
-  transform: translateY(-4px);
-  /*修正一開始的偏差*/
-  width: 126px;
-  left: 49px;
+  width: 124px;
+  right: 50%; 
+  /* 用絕對定位 50%把指針推到圓心 */
   background: transparent url('./img/second-hand/second-hand.png') 0% 0% no-repeat padding-box;
   align-items: center;
-
   opacity: 1;
 }
 
 .min-hand {
   background-color: #ff7700;
   width: 96px;
-  left: 83px;
+  right: 50%;
   height: 8px;
-  transform: translateY(-4px);
   border-radius: 30px;
-  /* background: transparent url('./img/minute-hand/minute-hand.png') 0% 0% no-repeat padding-box; */
-  /* background-size: cover; */
   align-items: center;
-  /* transform: matrix(-1, 0, 0, -1, 0, 0); */
-
-
-
-
 }
 
 .hour-hand {
   background-color: white;
   width: 72px;
-  left: 107px;
+  right: 50%;
   height: 8px;
-  transform: translateY(-4px);
   border-radius: 30px;
   align-items: center;
-
-
-  /* background: transparent url('./img/hour-hand/hour-hand.png') 0% 0% no-repeat padding-box; */
 }
 
 .clock-face {
-  width: 325px;
-  height: 325px;
+  width: 350px;
+  height:350px;
   background-color: #293B29;
   border-radius: 50%;
-  margin: 10px;
+  margin: 20px;
   justify-content: center;
   align-items: center;
 
 }
 
 
-.clock-number{
-  position: absolute; 
+.star {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background-color: #FF7600;
+  /* 橘色 */
+  clip-path: polygon(50% 0%, 71% 24%, 98% 35%, 68% 57%, 50% 84%, 33% 61%, 2% 35%, 30% 23%);
 
+}
+
+.line {
+  position: absolute;
+  border: 0.5px solid #FF7600;
+  /* width: "300px", */
+
+
+  
 }
