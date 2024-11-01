@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/the-clock/static/css/main.3efeefb0.css",
+    "main.js": "/the-clock/static/js/main.aae2fb0b.js",
+    "static/js/453.b9a9eb0e.chunk.js": "/the-clock/static/js/453.b9a9eb0e.chunk.js",
+    "index.html": "/the-clock/index.html",
+    "main.3efeefb0.css.map": "/the-clock/static/css/main.3efeefb0.css.map",
+    "main.aae2fb0b.js.map": "/the-clock/static/js/main.aae2fb0b.js.map",
+    "453.b9a9eb0e.chunk.js.map": "/the-clock/static/js/453.b9a9eb0e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3efeefb0.css",
+    "static/js/main.aae2fb0b.js"
+  ]
+}
